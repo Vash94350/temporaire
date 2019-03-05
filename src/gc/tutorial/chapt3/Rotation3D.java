@@ -42,7 +42,7 @@ public class Rotation3D extends Application {
 
     primaryStage.addEventHandler(KeyEvent.KEY_PRESSED, event -> {
       switch (event.getCode()) {
-        case W:
+        case Z:
           group.translateZProperty().set(group.getTranslateZ() + 100);
           break;
         case S:
@@ -51,7 +51,7 @@ public class Rotation3D extends Application {
         case Q:
           group.rotateByX(10);
           break;
-        case E:
+        case D:
           group.rotateByX(-10);
           break;
         case NUMPAD6:
