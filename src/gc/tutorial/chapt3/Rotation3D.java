@@ -21,8 +21,8 @@ import javafx.stage.Stage;
  */
 public class Rotation3D extends Application {
 
-  private static final int WIDTH = 1400;
-  private static final int HEIGHT = 800;
+  private static final int WIDTH = 1000;
+  private static final int HEIGHT = 600;
 
   @Override
   public void start(Stage primaryStage) {
@@ -38,14 +38,14 @@ public class Rotation3D extends Application {
 
     group.translateXProperty().set(WIDTH / 2);
     group.translateYProperty().set(HEIGHT / 2);
-    group.translateZProperty().set(-1200);
+    group.translateZProperty().set(-800);
 
     primaryStage.addEventHandler(KeyEvent.KEY_PRESSED, event -> {
       switch (event.getCode()) {
-        case Z:
+        case S:
           group.translateZProperty().set(group.getTranslateZ() + 100);
           break;
-        case S:
+        case Z:
           group.translateZProperty().set(group.getTranslateZ() - 100);
           break;
         case Q:
