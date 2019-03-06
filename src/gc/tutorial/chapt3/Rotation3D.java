@@ -12,6 +12,8 @@ import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Transform;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+
 
 /**
  * @author afsal villan
@@ -63,7 +65,7 @@ public class Rotation3D extends Application {
       }
     });
 
-    primaryStage.setTitle("Genuine Coder");
+    primaryStage.setTitle("Michael window");
     primaryStage.setScene(scene);
     primaryStage.show();
   }
@@ -73,10 +75,10 @@ public class Rotation3D extends Application {
     launch(args);
   }
 
-  class SmartGroup extends Group {
-
-    Rotate r;
-    Transform t = new Rotate();
+  class SmartGroup extends Group
+  {
+      Rotate r;
+      Transform t = new Rotate();
 
     void rotateByX(int ang) {
       r = new Rotate(ang, Rotate.X_AXIS);
@@ -92,4 +94,17 @@ public class Rotation3D extends Application {
       this.getTransforms().addAll(t);
     }
   }
+}
+
+class toSave
+{
+    public double[] create_model(int nb_inputs)
+    {
+        double[] tab= new double[nb_inputs+1];
+        for (Object o : tab)
+        {
+
+        }
+        return tab;
+    }
 }
